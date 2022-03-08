@@ -17,15 +17,3 @@ export default function ProductPage()  {
         </>
     )
 }
-
-const Wrap = styled.div`
-    display: flex;
-`
-
-const InnerWrap = styled.div`
-    position: relative;
-    width: 80%;
-    min-height: 100%;;
-
-    display: flex;
-`

@@ -6,7 +6,7 @@ import { Link,useHistory } from "react-router-dom";
 import styled from "styled-components"
 
 // img
-import ArrowSvg from "../../assets/img/icon/icon_arrow_down.svg"
+// import ArrowSvg from "../../assets/img/icon/icon_arrow_down.svg"
 
 export default function Pagination() {
 
@@ -44,7 +44,7 @@ const PaginationPrev = styled.div`
     
     cursor: pointer;
 
-    background: url(${ArrowSvg}) no-repeat center center / contain;
+    /* background: url(${ArrowSvg}) no-repeat center center / contain; */
 
     transform:rotate(90deg);
     filter: invert(54%) sepia(0%) saturate(2460%) hue-rotate(145deg) brightness(104%) contrast(81%);

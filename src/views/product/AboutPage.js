@@ -17,10 +17,3 @@ export default function AboutPage()  {
         </>
     )
 }
-
-
-const Wrap = styled.div`
-    position: relative;
-    width: 20%;
-    min-height: 100%;
-`

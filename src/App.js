@@ -28,11 +28,12 @@ export default function App() {
     <>
       <ScrollTop />
       <Routes>
-        {/* <Route className={(navData) =>  navData.isActive ? classes.active : '' } path="/" element={<Main />} /> */}
-        {/* 이전버전 */}
+        {/* 1. 이전버전 */}
         {/* <Route exact path="/" component={Main}/> */}
-        {/* 현버전 */}
+
+        {/* 2. 현버전 */}
         <Route path="/" element={<Main />} />
+
         {/* about 관련 페이지 */}
         {/* 만약 정확히 일치하는 path 가 없을때 그나마 얘랑 비슷하다 생각해서 해당 페이지 노출. */}
         <Route path="/about" element={<AboutDefaultPage />}>
