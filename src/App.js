@@ -1,31 +1,29 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from "react";
 
-import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 // scrolltop
-import ScrollTop from './component/scrollTop/ScrollTop'
+import ScrollTop from "./component/scrollTop/ScrollTop";
 
 // Main
-import Main from './views/main/MainPage'
+import Main from "./views/main/MainPage";
 
 // Product
-import AboutDefaultPage from './views/product/AboutDefaultPage'
-import AboutPage from './views/product/AboutPage'
-import ProductPage from './views/product/ProductPage'
+import AboutDefaultPage from "./views/product/AboutDefaultPage";
+import AboutPage from "./views/product/AboutPage";
+import ProductPage from "./views/product/ProductPage";
 
 // User
-import UserDefaultPage from './views/user/UserDefaultPage'
-import UsersPage from './views/user/UserPage'
-import TogglePage from './views/user/TogglePage'
+import UserDefaultPage from "./views/user/UserDefaultPage";
+import UsersPage from "./views/user/UserPage";
+import TogglePage from "./views/user/TogglePage";
 
 // Notfound
-import NotFound from './views/NotFound'
-
+import NotFound from "./views/NotFound";
 
 export default function App() {
   return (
-    <>
+    <React.Fragment>
       <ScrollTop />
       <Routes>
         {/* 1. 이전버전 */}
@@ -49,6 +47,6 @@ export default function App() {
         <Route path="/*" element={<NotFound />} />
         {/* <Route path="/*" element={<div>Page Not Found</div>} /> */}
       </Routes>
-      </>
+    </React.Fragment>
   );
 }
